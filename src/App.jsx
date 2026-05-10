@@ -196,7 +196,7 @@ export default function ITSupportWebsite() {
         <section className="px-6 py-20 text-center">
           <h2 className="text-3xl font-semibold">A hub for <span className="text-orange-500">techies</span> of all levels</h2>
           <div className="mx-auto mt-10 grid max-w-5xl gap-5 md:grid-cols-5">
-                      {hub.map(([Icon, title, text]) => (
+            {hub.map(([Icon, title, text]) => (
               <div key={title} className="border bg-white shadow-sm">
                 <div className="grid place-items-center bg-black py-6">
                   <Icon className="h-8 w-8 text-orange-500" />
@@ -209,7 +209,122 @@ export default function ITSupportWebsite() {
             ))}
           </div>
         </section>
+
+        <section className="bg-neutral-100 px-6 py-20">
+          <div className="mx-auto max-w-3xl">
+            <h2 className="text-center text-3xl font-semibold">Frequently <span className="text-orange-500">asked Questions</span></h2>
+            <div className="mt-10 space-y-4">
+              {[
+                ["How long will my support take?", "Most simple issues can be looked at quickly. More complex issues may take longer and you will always be kept updated."],
+                ["Can you help with email and hosting?", "Yes. I can help with domains, DNS, website hosting, business email, mailbox setup and migrations."],
+                ["Can you improve WiFi and broadband?", "Yes. I can check router placement, signal issues, mesh WiFi, broadband faults, and network setup."],
+              ].map(([q, a]) => (
+                <div key={q} className="rounded-sm bg-white p-5 shadow-sm">
+                  <div className="flex items-center justify-between font-bold">
+                    <span>{q}</span>
+                    <HelpCircle className="h-5 w-5 text-orange-500" />
+                  </div>
+                  <p className="mt-3 text-sm leading-6 text-neutral-600">{a}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section id="reviews" className="bg-neutral-950 px-6 py-20 text-white">
+          <div className="mx-auto max-w-5xl text-center">
+            <h2 className="text-3xl font-semibold">Real customer <span className="text-orange-500">reviews</span></h2>
+            <div className="mt-10 grid gap-6 md:grid-cols-2">
+              {["Brilliant service. My laptop was fixed quickly and now runs better than ever.", "Super helpful and reliable. They set up our office network and improved our WiFi massively."].map((text, index) => (
+                <div key={text} className="rounded-sm bg-black/70 p-7 text-left shadow">
+                  <div className="mb-4 flex text-orange-500">
+                    {Array.from({ length: 5 }).map((_, i) => <Star key={i} className="h-4 w-4 fill-current" />)}
+                  </div>
+                  <p className="leading-7 text-neutral-200">{text}</p>
+                  <p className="mt-4 font-bold text-orange-500">Customer {index + 1}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section id="business" className="px-6 py-20 text-center">
+          <h2 className="text-3xl font-semibold">SmartFix IT for <span className="text-orange-500">Business & Education</span></h2>
+          <div className="mx-auto mt-10 grid max-w-4xl gap-6 md:grid-cols-3">
+            {[
+              [Building2, "Business IT Support", "Tailored IT support for small businesses."],
+              [Wifi, "Network Solutions", "Reliable wired, wireless and broadband support."],
+              [Server, "Hosting & Email", "Managed hosting, domains and business email setup."],
+            ].map(([Icon, title, text]) => (
+              <div key={title} className="rounded-sm bg-white p-7 text-left shadow-lg shadow-neutral-200/80">
+                <Icon className="mb-4 h-8 w-8 text-orange-500" />
+                <h3 className="font-bold text-orange-500">{title}</h3>
+                <p className="mt-3 text-sm leading-6 text-neutral-600">{text}</p>
+                <a href="#contact" className="mt-5 inline-flex items-center gap-1 text-sm font-bold">Find out more <ArrowRight className="h-4 w-4 text-orange-500" /></a>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className="bg-neutral-100 px-6 py-16">
+          <div className="mx-auto grid max-w-7xl gap-8 text-center md:grid-cols-4">
+            {stats.map(([number, label]) => (
+              <div key={label}>
+                <div className="text-4xl font-light text-orange-500">{number}</div>
+                <p className="mt-2 text-sm text-neutral-600">{label}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section id="contact" className="px-6 py-20">
+          <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-[300px_1fr]">
+            <div>
+              <h2 className="text-3xl font-bold">Got questions? <span className="text-orange-500">Let us know</span></h2>
+              <p className="mt-4 text-neutral-600">Call <span className="font-bold text-orange-500">0800 123 4567</span> or send a message and we will get back to you.</p>
+            </div>
+            <form className="grid gap-4 md:grid-cols-2">
+              <input className="border p-4" placeholder="Name" />
+              <input className="border p-4" placeholder="Email" />
+              <input className="border p-4" placeholder="Phone" />
+              <select className="border p-4">
+                <option>Service</option>
+                <option>Email & Web Hosting</option>
+                <option>WiFi & Broadband</option>
+                <option>Computer Support</option>
+              </select>
+              <textarea className="border p-4 md:col-span-2" rows="5" placeholder="Message" />
+              <button className="bg-orange-500 px-8 py-4 font-bold text-white hover:bg-orange-600 md:col-start-2">Send Message</button>
+            </form>
+          </div>
+        </section>
       </main>
+
+      <footer className="bg-neutral-950 px-6 py-14 text-neutral-300">
+        <div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-4">
+          <div>
+            <h3 className="text-xl font-bold text-white">SmartFix <span className="text-orange-500">IT</span></h3>
+            <p className="mt-4 text-sm leading-6">Expert IT support for homes and businesses. Fast, reliable and affordable technical solutions.</p>
+          </div>
+          <div>
+            <h4 className="font-bold text-white">Quick Links</h4>
+            <ul className="mt-4 space-y-2 text-sm"><li>Home</li><li>Services</li><li>Business</li><li>Contact</li></ul>
+          </div>
+          <div>
+            <h4 className="font-bold text-white">Services</h4>
+            <ul className="mt-4 space-y-2 text-sm"><li>Email Hosting</li><li>Web Hosting</li><li>Network Support</li><li>Hardware Support</li></ul>
+          </div>
+          <div>
+            <h4 className="font-bold text-white">Contact Us</h4>
+            <div className="mt-4 space-y-3 text-sm">
+              <p className="flex gap-2"><Phone className="h-4 w-4 text-orange-500" /> 0800 123 4567</p>
+              <p className="flex gap-2"><Mail className="h-4 w-4 text-orange-500" /> hello@example.co.uk</p>
+              <p className="flex gap-2"><MapPin className="h-4 w-4 text-orange-500" /> Your town, UK</p>
+            </div>
+          </div>
+        </div>
+        <p className="mx-auto mt-10 max-w-7xl border-t border-white/10 pt-6 text-center text-xs">© {new Date().getFullYear()} SmartFix IT. All rights reserved.</p>
+      </footer>
     </div>
   );
 }
