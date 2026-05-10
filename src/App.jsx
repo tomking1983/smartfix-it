@@ -76,7 +76,7 @@ const servicePages = {
     title: "Email & Web Hosting",
     intro: "Reliable help with domains, DNS, email accounts, website hosting, migrations, and ongoing support.",
     overview:
-      "Email and hosting can be confusing when something stops working. I can help you set up, fix, move, and manage your email and website hosting so everything works smoothly and professionally.",
+      "Email and hosting can be confusing when something stops working. We can help you set up, fix, move, and manage your email and website hosting so everything works smoothly and professionally.",
     images: {
       hero: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1800&q=80",
       feature: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=1200&q=80",
@@ -96,9 +96,9 @@ const servicePages = {
     ],
     process: ["Check your current setup", "Identify the best fix or migration plan", "Make the changes safely", "Test email, website and DNS records", "Provide clear notes for future use"],
     faqs: [
-      ["Can you move my email to a new provider?", "Yes. I can help plan the move, update DNS records, connect devices and reduce downtime."],
-      ["Can you help if my emails go to spam?", "Yes. I can check SPF, DKIM, DMARC and general deliverability settings."],
-      ["Can you host my website?", "I can help set up and manage hosting or advise on the best provider for your needs."],
+      ["Can you move my email to a new provider?", "Yes. We can help plan the move, update DNS records, connect devices and reduce downtime."],
+      ["Can you help if my emails go to spam?", "Yes. We can check SPF, DKIM, DMARC and general deliverability settings."],
+      ["Can you host my website?", "We can help set up and manage hosting or advise on the best provider for your needs."],
     ],
   },
   "/wifi-broadband-support": {
@@ -106,7 +106,7 @@ const servicePages = {
     title: "WiFi & Broadband Support",
     intro: "Improve slow WiFi, fix broadband issues, extend coverage, and make your home or office network more reliable.",
     overview:
-      "Poor WiFi can make everything feel broken. I can check your router, broadband connection, WiFi coverage, interference, devices and network layout to find the cause and improve reliability.",
+      "Poor WiFi can make everything feel broken. We can check your router, broadband connection, WiFi coverage, interference, devices and network layout to find the cause and improve reliability.",
     images: {
       hero: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1800&q=80",
       feature: "https://images.unsplash.com/photo-1600267185393-e158a98703de?auto=format&fit=crop&w=1200&q=80",
@@ -126,9 +126,9 @@ const servicePages = {
     ],
     process: ["Test broadband speed and stability", "Check WiFi coverage", "Review router and device setup", "Recommend practical improvements", "Install and test the solution"],
     faqs: [
-      ["Can you make WiFi better throughout the house?", "Yes. I can recommend and install mesh WiFi or access points depending on the property."],
-      ["Can you deal with broadband dropouts?", "Yes. I can help identify whether the issue is internal equipment or the provider line."],
-      ["Can you set up a new router?", "Yes. I can set up the router, WiFi name, password, security and connected devices."],
+      ["Can you make WiFi better throughout the house?", "Yes. We can recommend and install mesh WiFi or access points depending on the property."],
+      ["Can you deal with broadband dropouts?", "Yes. We can help identify whether the issue is internal equipment or the provider line."],
+      ["Can you set up a new router?", "Yes. We can set up the router, WiFi name, password, security and connected devices."],
     ],
   },
   "/computer-support": {
@@ -136,7 +136,7 @@ const servicePages = {
     title: "Computer Support",
     intro: "Friendly support for laptops, desktops, software problems, slow computers, upgrades, and new device setup.",
     overview:
-      "Whether your computer is slow, unreliable, infected, full, outdated, or difficult to use, I can help diagnose the issue and get it working properly again.",
+      "Whether your computer is slow, unreliable, infected, full, outdated, or difficult to use, we can help diagnose the issue and get it working properly again.",
     images: {
       hero: "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=1800&q=80",
       feature: "https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?auto=format&fit=crop&w=1200&q=80",
@@ -156,9 +156,9 @@ const servicePages = {
     ],
     process: ["Discuss the problem", "Run checks and diagnostics", "Explain the issue clearly", "Carry out the agreed fix", "Test everything before finishing"],
     faqs: [
-      ["Can you fix a slow laptop?", "Yes. I can diagnose the cause and suggest the best fix, from software cleanup to hardware upgrades."],
-      ["Do you support Mac and Windows?", "Yes. I can help with both Windows PCs and Apple Macs."],
-      ["Can you set up a new computer?", "Yes. I can transfer files, set up email, install software and configure backups."],
+      ["Can you fix a slow laptop?", "Yes. We can diagnose the cause and suggest the best fix, from software cleanup to hardware upgrades."],
+      ["Do you support Mac and Windows?", "Yes. We can help with both Windows PCs and Apple Macs."],
+      ["Can you set up a new computer?", "Yes. We can transfer files, set up email, install software and configure backups."],
     ],
   },
   "/business-it-support": {
@@ -166,7 +166,7 @@ const servicePages = {
     title: "Business IT Support",
     intro: "Practical IT support for small businesses that need reliable systems without complicated jargon.",
     overview:
-      "Small businesses need IT that just works. I can help with day to day support, new starter setup, email, hosting, networking, computers, security and practical advice.",
+      "Small businesses need IT that just works. We can help with day to day support, new starter setup, email, hosting, networking, computers, security and practical advice.",
     images: {
       hero: "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1800&q=80",
       feature: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80",
@@ -187,8 +187,8 @@ const servicePages = {
     process: ["Understand how your business works", "Review current systems", "Fix urgent issues", "Recommend sensible improvements", "Provide ongoing support as needed"],
     faqs: [
       ["Do you offer ongoing support?", "Yes. Support can be arranged as needed or on a regular basis depending on your business."],
-      ["Can you support remote workers?", "Yes. I can help with laptops, email, remote access, security and home office connectivity."],
-      ["Can you help us move email or hosting?", "Yes. I can plan and manage email, domain and hosting changes."],
+      ["Can you support remote workers?", "Yes. We can help with laptops, email, remote access, security and home office connectivity."],
+      ["Can you help us move email or hosting?", "Yes. We can plan and manage email, domain and hosting changes."],
     ],
   },
   "/network-support": {
@@ -196,7 +196,7 @@ const servicePages = {
     title: "Network Support",
     intro: "Support for wired and wireless networks, broadband, routers, switches, access points, and connectivity issues.",
     overview:
-      "A reliable network is the foundation of good IT. I can help design, fix and improve small networks for homes and businesses, including wired connections, WiFi and broadband equipment.",
+      "A reliable network is the foundation of good IT. We can help design, fix and improve small networks for homes and businesses, including wired connections, WiFi and broadband equipment.",
     images: {
       hero: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1800&q=80",
       feature: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80",
@@ -216,9 +216,9 @@ const servicePages = {
     ],
     process: ["Map your current network", "Find weak points", "Recommend fixes", "Configure equipment", "Test speed, coverage and reliability"],
     faqs: [
-      ["Can you set up office WiFi?", "Yes. I can set up routers, access points, guest networks and secure passwords."],
-      ["Can you fix network dropouts?", "Yes. I can test the network and identify whether the issue is cabling, WiFi, router, broadband or device related."],
-      ["Can you advise what equipment to buy?", "Yes. I can recommend suitable routers, switches, mesh systems and access points."],
+      ["Can you set up office WiFi?", "Yes. We can set up routers, access points, guest networks and secure passwords."],
+      ["Can you fix network dropouts?", "Yes. We can test the network and identify whether the issue is cabling, WiFi, router, broadband or device related."],
+      ["Can you advise what equipment to buy?", "Yes. We can recommend suitable routers, switches, mesh systems and access points."],
     ],
   },
 };
@@ -309,7 +309,7 @@ export default function ITSupportWebsite() {
                 </div>
 
                 <div className="mt-14">
-                  <h2 className="text-3xl font-bold">How I can help</h2>
+                  <h2 className="text-3xl font-bold">How we can help</h2>
                   <div className="mt-6 grid gap-5 md:grid-cols-2">
                     {currentService.details.map(([title, text]) => (
                       <div key={title} className="rounded-sm border bg-white p-6 shadow-sm">
@@ -336,12 +336,12 @@ export default function ITSupportWebsite() {
                   <div className="rounded-sm bg-black p-6 text-white shadow-lg">
                     <p className="text-4xl font-light text-orange-500">1</p>
                     <h3 className="mt-4 font-bold">Assess</h3>
-                    <p className="mt-2 text-sm leading-6 text-neutral-300">I look at the issue, your setup and what you need the technology to do.</p>
+                    <p className="mt-2 text-sm leading-6 text-neutral-300">We look at the issue, your setup and what you need the technology to do.</p>
                   </div>
                   <div className="rounded-sm bg-neutral-100 p-6 shadow-lg">
                     <p className="text-4xl font-light text-orange-500">2</p>
                     <h3 className="mt-4 font-bold">Fix</h3>
-                    <p className="mt-2 text-sm leading-6 text-neutral-600">I carry out the agreed work with practical, cost conscious solutions.</p>
+                    <p className="mt-2 text-sm leading-6 text-neutral-600">We carry out the agreed work with practical, cost conscious solutions.</p>
                   </div>
                   <div className="rounded-sm bg-black p-6 text-white shadow-lg">
                     <p className="text-4xl font-light text-orange-500">3</p>
@@ -365,7 +365,7 @@ export default function ITSupportWebsite() {
 
               <aside className="h-fit rounded-sm bg-neutral-950 p-8 text-white shadow-xl lg:sticky lg:top-24">
                 <h3 className="text-2xl font-bold">Need this service?</h3>
-                <p className="mt-4 leading-7 text-neutral-300">Send a message with a quick description of the issue and I will get back to you as soon as possible.</p>
+                <p className="mt-4 leading-7 text-neutral-300">Send a message with a quick description of the issue and we will get back to you as soon as possible.</p>
                 <a href="/#contact" className="mt-6 inline-block bg-orange-500 px-6 py-4 text-sm font-bold text-white hover:bg-orange-600">Get Support</a>
                 <img src={currentService.images.feature} alt="" className="h-40 w-full object-cover opacity-80" />
                 <div className="mt-8 border-t border-white/10 pt-6 text-sm text-neutral-300">
@@ -535,8 +535,8 @@ export default function ITSupportWebsite() {
             <div className="mt-10 space-y-4">
               {[
                 ["How long will my support take?", "Most simple issues can be looked at quickly. More complex issues may take longer and you will always be kept updated."],
-                ["Can you help with email and hosting?", "Yes. I can help with domains, DNS, website hosting, business email, mailbox setup and migrations."],
-                ["Can you improve WiFi and broadband?", "Yes. I can check router placement, signal issues, mesh WiFi, broadband faults, and network setup."],
+                ["Can you help with email and hosting?", "Yes. We can help with domains, DNS, website hosting, business email, mailbox setup and migrations."],
+                ["Can you improve WiFi and broadband?", "Yes. We can check router placement, signal issues, mesh WiFi, broadband faults, and network setup."],
               ].map(([q, a]) => (
                 <div key={q} className="rounded-sm bg-white p-5 shadow-sm">
                   <div className="flex items-center justify-between font-bold">
