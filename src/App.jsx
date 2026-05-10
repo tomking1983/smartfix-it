@@ -283,18 +283,29 @@ export default function ITSupportWebsite() {
               <h2 className="text-3xl font-bold">Got questions? <span className="text-orange-500">Let us know</span></h2>
               <p className="mt-4 text-neutral-600">Call <span className="font-bold text-orange-500">0800 123 4567</span> or send a message and we will get back to you.</p>
             </div>
-            <form className="grid gap-4 md:grid-cols-2">
-              <input className="border p-4" placeholder="Name" />
-              <input className="border p-4" placeholder="Email" />
-              <input className="border p-4" placeholder="Phone" />
-              <select className="border p-4">
-                <option>Service</option>
-                <option>Email & Web Hosting</option>
-                <option>WiFi & Broadband</option>
-                <option>Computer Support</option>
+            <form
+              action="https://api.web3forms.com/submit"
+              method="POST"
+              className="grid gap-4 md:grid-cols-2"
+            >
+              <input
+                type="hidden"
+                name="access_key"
+                value="f3a9804c-751e-4ffd-9930-6302bf1b73a9"
+              />
+              <input className="border p-4" type="text" name="name" placeholder="Name" required />
+              <input className="border p-4" type="email" name="email" placeholder="Email" required />
+              <input className="border p-4" type="tel" name="phone" placeholder="Phone" />
+              <select className="border p-4" name="service" required>
+                <option value="">Service</option>
+                <option value="Email & Web Hosting">Email & Web Hosting</option>
+                <option value="WiFi & Broadband">WiFi & Broadband</option>
+                <option value="Computer Support">Computer Support</option>
               </select>
-              <textarea className="border p-4 md:col-span-2" rows="5" placeholder="Message" />
-              <button className="bg-orange-500 px-8 py-4 font-bold text-white hover:bg-orange-600 md:col-start-2">Send Message</button>
+              <textarea className="border p-4 md:col-span-2" name="message" rows="5" placeholder="Message" required />
+              <input type="hidden" name="subject" value="New SmartFix IT enquiry" />
+              <input type="checkbox" name="botcheck" className="hidden" />
+              <button className="bg-orange-500 px-8 py-4 font-bold text-white hover:bg-orange-600 md:col-start-2" type="submit">Send Message</button>
             </form>
           </div>
         </section>
