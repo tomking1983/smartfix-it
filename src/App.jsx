@@ -25,26 +25,30 @@ import {
   Globe,
 } from "lucide-react";
 
+import hostingImage from "./assets/images/hosting.jpg";
+import wifiImage from "./assets/images/wifi.jpg";
+import supportImage from "./assets/images/support.jpg";
+
 const services = [
   {
     icon: Globe,
     title: "Email & Web Hosting",
     href: "/email-web-hosting",
-    image: "src/assets/images/hosting.jpg",
+    image: hostingImage,
     text: "Domains, DNS, business email, mailbox setup, website hosting, migrations, and support.",
   },
   {
     icon: Wifi,
     title: "WiFi & Broadband Support",
     href: "/wifi-broadband-support",
-    image: "src/assets/images/wifi.jpg",
+    image: wifiImage,
     text: "Router setup, poor signal fixes, mesh WiFi, broadband troubleshooting, and network improvements.",
   },
   {
     icon: Monitor,
     title: "Computer Support",
     href: "/computer-support",
-    image: "src/assets/images/support.jpg",
+    image: supportImage,
     text: "Hardware, software, slow computers, new device setup, virus removal, backups, and upgrades.",
   },
 ];
