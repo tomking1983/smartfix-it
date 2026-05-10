@@ -29,19 +29,22 @@ const services = [
   {
     icon: Globe,
     title: "Email & Web Hosting",
-    image: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=900&q=80",
+    href: "/email-web-hosting",
+    image: "src/assets/images/hosting.jpg",
     text: "Domains, DNS, business email, mailbox setup, website hosting, migrations, and support.",
   },
   {
     icon: Wifi,
     title: "WiFi & Broadband Support",
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=900&q=80",
+    href: "/wifi-broadband-support",
+    image: "src/assets/images/wifi.jpg",
     text: "Router setup, poor signal fixes, mesh WiFi, broadband troubleshooting, and network improvements.",
   },
   {
     icon: Monitor,
     title: "Computer Support",
-    image: "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=900&q=80",
+    href: "/computer-support",
+    image: "src/assets/images/support.jpg",
     text: "Hardware, software, slow computers, new device setup, virus removal, backups, and upgrades.",
   },
 ];
@@ -63,7 +66,316 @@ const stats = [
   ["50+", "5 Star Reviews"],
 ];
 
+const servicePages = {
+  "/email-web-hosting": {
+    icon: Globe,
+    title: "Email & Web Hosting",
+    intro: "Reliable help with domains, DNS, email accounts, website hosting, migrations, and ongoing support.",
+    overview:
+      "Email and hosting can be confusing when something stops working. I can help you set up, fix, move, and manage your email and website hosting so everything works smoothly and professionally.",
+    images: {
+      hero: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1800&q=80",
+      feature: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=1200&q=80",
+      support: "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1200&q=80",
+    },
+    bullets: [
+      "Business email setup and mailbox support",
+      "Domain, DNS and hosting configuration",
+      "Website hosting advice and migration help",
+      "Email deliverability, spam and security checks",
+    ],
+    details: [
+      ["Business email setup", "Set up professional email addresses, connect them to phones and computers, and make sure sending and receiving works correctly."],
+      ["Domain and DNS help", "Configure domain records including MX, SPF, DKIM, DMARC, A records and CNAME records when needed."],
+      ["Website hosting support", "Help choose, configure, or move website hosting so your site is stable, secure, and easy to manage."],
+      ["Mailbox migrations", "Move emails between providers with minimal disruption, including help with backups and account settings."],
+    ],
+    process: ["Check your current setup", "Identify the best fix or migration plan", "Make the changes safely", "Test email, website and DNS records", "Provide clear notes for future use"],
+    faqs: [
+      ["Can you move my email to a new provider?", "Yes. I can help plan the move, update DNS records, connect devices and reduce downtime."],
+      ["Can you help if my emails go to spam?", "Yes. I can check SPF, DKIM, DMARC and general deliverability settings."],
+      ["Can you host my website?", "I can help set up and manage hosting or advise on the best provider for your needs."],
+    ],
+  },
+  "/wifi-broadband-support": {
+    icon: Wifi,
+    title: "WiFi & Broadband Support",
+    intro: "Improve slow WiFi, fix broadband issues, extend coverage, and make your home or office network more reliable.",
+    overview:
+      "Poor WiFi can make everything feel broken. I can check your router, broadband connection, WiFi coverage, interference, devices and network layout to find the cause and improve reliability.",
+    images: {
+      hero: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1800&q=80",
+      feature: "https://images.unsplash.com/photo-1600267185393-e158a98703de?auto=format&fit=crop&w=1200&q=80",
+      support: "https://images.unsplash.com/photo-1562408590-e32931084e23?auto=format&fit=crop&w=1200&q=80",
+    },
+    bullets: [
+      "Router setup and broadband troubleshooting",
+      "Mesh WiFi and signal improvement",
+      "Home and small office network checks",
+      "Advice on broadband providers and equipment",
+    ],
+    details: [
+      ["WiFi coverage checks", "Find weak signal areas and recommend better router placement, mesh WiFi, access points, or cabling where useful."],
+      ["Broadband fault finding", "Check whether the issue is your broadband provider, router, WiFi signal, cabling, or connected devices."],
+      ["Router and mesh setup", "Configure routers, mesh systems, guest networks, passwords, parental controls and basic security settings."],
+      ["Speed and stability improvements", "Improve real world performance so video calls, streaming, work systems and smart devices run more reliably."],
+    ],
+    process: ["Test broadband speed and stability", "Check WiFi coverage", "Review router and device setup", "Recommend practical improvements", "Install and test the solution"],
+    faqs: [
+      ["Can you make WiFi better throughout the house?", "Yes. I can recommend and install mesh WiFi or access points depending on the property."],
+      ["Can you deal with broadband dropouts?", "Yes. I can help identify whether the issue is internal equipment or the provider line."],
+      ["Can you set up a new router?", "Yes. I can set up the router, WiFi name, password, security and connected devices."],
+    ],
+  },
+  "/computer-support": {
+    icon: Monitor,
+    title: "Computer Support",
+    intro: "Friendly support for laptops, desktops, software problems, slow computers, upgrades, and new device setup.",
+    overview:
+      "Whether your computer is slow, unreliable, infected, full, outdated, or difficult to use, I can help diagnose the issue and get it working properly again.",
+    images: {
+      hero: "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=1800&q=80",
+      feature: "https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?auto=format&fit=crop&w=1200&q=80",
+      support: "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?auto=format&fit=crop&w=1200&q=80",
+    },
+    bullets: [
+      "Windows and Mac troubleshooting",
+      "Slow computer fixes and performance checks",
+      "Hardware, printers and peripheral setup",
+      "Software installation, backups and security checks",
+    ],
+    details: [
+      ["Slow computer fixes", "Check startup apps, storage, memory, updates, malware, old software and hardware limitations."],
+      ["Hardware and upgrades", "Help with SSD upgrades, memory upgrades, replacement parts, printers, monitors, keyboards and other peripherals."],
+      ["Software support", "Install, update and troubleshoot common software, browsers, Microsoft 365, email apps and utilities."],
+      ["Security and backup", "Check antivirus, remove unwanted software, set up backups and improve basic protection against data loss."],
+    ],
+    process: ["Discuss the problem", "Run checks and diagnostics", "Explain the issue clearly", "Carry out the agreed fix", "Test everything before finishing"],
+    faqs: [
+      ["Can you fix a slow laptop?", "Yes. I can diagnose the cause and suggest the best fix, from software cleanup to hardware upgrades."],
+      ["Do you support Mac and Windows?", "Yes. I can help with both Windows PCs and Apple Macs."],
+      ["Can you set up a new computer?", "Yes. I can transfer files, set up email, install software and configure backups."],
+    ],
+  },
+  "/business-it-support": {
+    icon: Building2,
+    title: "Business IT Support",
+    intro: "Practical IT support for small businesses that need reliable systems without complicated jargon.",
+    overview:
+      "Small businesses need IT that just works. I can help with day to day support, new starter setup, email, hosting, networking, computers, security and practical advice.",
+    images: {
+      hero: "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1800&q=80",
+      feature: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80",
+      support: "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&q=80",
+    },
+    bullets: [
+      "Ongoing IT support for small businesses",
+      "Email, hosting, computers and network support",
+      "New starter setup and device configuration",
+      "Security, backups and general IT advice",
+    ],
+    details: [
+      ["Day to day support", "Help with user issues, software problems, email access, device setup and general troubleshooting."],
+      ["New starter setup", "Prepare laptops, email accounts, software access, printers, shared drives and security basics."],
+      ["Business continuity", "Review backups, device health, account recovery, security settings and critical systems."],
+      ["Practical IT advice", "Clear guidance on upgrades, providers, software, security, hosting and network improvements."],
+    ],
+    process: ["Understand how your business works", "Review current systems", "Fix urgent issues", "Recommend sensible improvements", "Provide ongoing support as needed"],
+    faqs: [
+      ["Do you offer ongoing support?", "Yes. Support can be arranged as needed or on a regular basis depending on your business."],
+      ["Can you support remote workers?", "Yes. I can help with laptops, email, remote access, security and home office connectivity."],
+      ["Can you help us move email or hosting?", "Yes. I can plan and manage email, domain and hosting changes."],
+    ],
+  },
+  "/network-support": {
+    icon: Server,
+    title: "Network Support",
+    intro: "Support for wired and wireless networks, broadband, routers, switches, access points, and connectivity issues.",
+    overview:
+      "A reliable network is the foundation of good IT. I can help design, fix and improve small networks for homes and businesses, including wired connections, WiFi and broadband equipment.",
+    images: {
+      hero: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1800&q=80",
+      feature: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80",
+      support: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80",
+    },
+    bullets: [
+      "Network fault finding and setup",
+      "Router, switch and access point support",
+      "WiFi coverage and stability improvements",
+      "Small office network planning and advice",
+    ],
+    details: [
+      ["Network fault finding", "Trace connection problems across routers, switches, cables, WiFi access points and devices."],
+      ["Wired network setup", "Help with switches, Ethernet cabling, desk connections, printers, NAS devices and shared resources."],
+      ["Wireless network setup", "Configure access points, mesh systems, guest WiFi, secure passwords and coverage improvements."],
+      ["Small office planning", "Recommend a practical setup for reliability, security, future growth and easier support."],
+    ],
+    process: ["Map your current network", "Find weak points", "Recommend fixes", "Configure equipment", "Test speed, coverage and reliability"],
+    faqs: [
+      ["Can you set up office WiFi?", "Yes. I can set up routers, access points, guest networks and secure passwords."],
+      ["Can you fix network dropouts?", "Yes. I can test the network and identify whether the issue is cabling, WiFi, router, broadband or device related."],
+      ["Can you advise what equipment to buy?", "Yes. I can recommend suitable routers, switches, mesh systems and access points."],
+    ],
+  },
+};
+
 export default function ITSupportWebsite() {
+  const isThankYouPage = window.location.pathname === "/thank-you";
+  const currentService = servicePages[window.location.pathname];
+
+  if (isThankYouPage) {
+    return (
+      <div className="min-h-screen bg-neutral-950 text-white">
+        <header className="bg-black px-6 py-5 shadow-xl">
+          <div className="mx-auto flex max-w-7xl items-center justify-between">
+            <a href="/" className="text-2xl font-bold tracking-tight">
+              SmartFix <span className="text-orange-500">IT</span>
+            </a>
+            <a href="/" className="rounded-sm bg-white px-4 py-2 text-sm font-semibold text-black hover:bg-orange-500 hover:text-white">Back Home</a>
+          </div>
+        </header>
+
+        <main className="relative grid min-h-[calc(100vh-76px)] place-items-center overflow-hidden px-6 py-20">
+          <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=2200&q=80')] bg-cover bg-center opacity-20" />
+          <div className="absolute inset-0 bg-gradient-to-br from-black via-neutral-950/90 to-black" />
+
+          <section className="relative mx-auto max-w-2xl border-t-[18px] border-orange-500 bg-white p-10 text-center text-neutral-900 shadow-2xl md:p-14">
+            <div className="mx-auto grid h-20 w-20 place-items-center rounded-full bg-orange-100">
+              <CheckCircle2 className="h-11 w-11 text-orange-500" />
+            </div>
+            <h1 className="mt-8 text-4xl font-bold md:text-5xl">Thanks, your message has been sent.</h1>
+            <p className="mt-5 text-lg leading-8 text-neutral-600">
+              We have received your enquiry and will get back to you as soon as possible. If your enquiry is urgent, call 07944 521 440.
+            </p>
+            <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
+              <a href="/" className="bg-orange-500 px-7 py-4 text-sm font-bold text-white hover:bg-orange-600">Return Home</a>
+              <a href="tel:08001234567" className="border border-neutral-900 px-7 py-4 text-sm font-bold text-neutral-900 hover:border-orange-500 hover:text-orange-500">Call Now</a>
+            </div>
+          </section>
+        </main>
+      </div>
+    );
+  }
+
+  if (currentService) {
+    const Icon = currentService.icon;
+
+    return (
+      <div className="min-h-screen bg-white font-sans text-neutral-900">
+        <header className="bg-black px-6 py-5 text-white shadow-xl">
+          <div className="mx-auto flex max-w-7xl items-center justify-between">
+            <a href="/" className="text-2xl font-bold tracking-tight">
+              SmartFix <span className="text-orange-500">IT</span>
+            </a>
+            <a href="/" className="rounded-sm bg-white px-4 py-2 text-sm font-semibold text-black hover:bg-orange-500 hover:text-white">Back Home</a>
+          </div>
+        </header>
+
+        <main>
+          <section className="relative overflow-hidden bg-black px-6 py-24 text-white">
+            <div className="absolute inset-0">
+              <img src={currentService.images.hero} alt="" className="h-full w-full object-cover opacity-30" />
+            </div>
+            <div className="absolute inset-0 bg-gradient-to-r from-black via-black/90 to-black/40" />
+            <div className="relative mx-auto max-w-5xl">
+              <Icon className="h-14 w-14 text-orange-500" />
+              <h1 className="mt-6 text-5xl font-bold leading-tight md:text-6xl">{currentService.title}</h1>
+              <p className="mt-6 max-w-3xl text-lg leading-8 text-neutral-200">{currentService.intro}</p>
+              <div className="mt-8 flex flex-wrap gap-4">
+                <a href="/#contact" className="bg-orange-500 px-7 py-4 text-sm font-bold text-white hover:bg-orange-600">Request Support</a>
+                <a href="tel:07944521440" className="border border-white px-7 py-4 text-sm font-bold text-white hover:border-orange-500 hover:text-orange-500">Call 07944 521 440</a>
+              </div>
+            </div>
+          </section>
+
+          <section className="px-6 py-20">
+            <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-[1fr_360px]">
+              <div>
+                <p className="text-sm font-bold uppercase tracking-widest text-orange-500">What is included</p>
+                <h2 className="mt-3 text-4xl font-bold">Straightforward help with clear next steps.</h2>
+                <p className="mt-5 max-w-3xl text-lg leading-8 text-neutral-600">{currentService.overview}</p>
+
+                <div className="mt-8 grid gap-4">
+                  {currentService.bullets.map((item) => (
+                    <div key={item} className="flex items-start gap-4 rounded-sm border bg-white p-5 shadow-sm">
+                      <CheckCircle2 className="mt-1 h-5 w-5 shrink-0 text-orange-500" />
+                      <p className="leading-7 text-neutral-700">{item}</p>
+                    </div>
+                  ))}
+                </div>
+
+                <div className="mt-14">
+                  <h2 className="text-3xl font-bold">How I can help</h2>
+                  <div className="mt-6 grid gap-5 md:grid-cols-2">
+                    {currentService.details.map(([title, text]) => (
+                      <div key={title} className="rounded-sm border bg-white p-6 shadow-sm">
+                        <h3 className="font-bold text-orange-500">{title}</h3>
+                        <p className="mt-3 text-sm leading-7 text-neutral-600">{text}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="mt-14 rounded-sm bg-neutral-100 p-8">
+                  <h2 className="text-3xl font-bold">Typical process</h2>
+                  <div className="mt-6 grid gap-4">
+                    {currentService.process.map((step, index) => (
+                      <div key={step} className="flex gap-4">
+                        <div className="grid h-9 w-9 shrink-0 place-items-center rounded-full bg-orange-500 text-sm font-bold text-white">{index + 1}</div>
+                        <p className="pt-1 leading-7 text-neutral-700">{step}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="mt-14 grid gap-6 md:grid-cols-3">
+                  <div className="rounded-sm bg-black p-6 text-white shadow-lg">
+                    <p className="text-4xl font-light text-orange-500">1</p>
+                    <h3 className="mt-4 font-bold">Assess</h3>
+                    <p className="mt-2 text-sm leading-6 text-neutral-300">I look at the issue, your setup and what you need the technology to do.</p>
+                  </div>
+                  <div className="rounded-sm bg-neutral-100 p-6 shadow-lg">
+                    <p className="text-4xl font-light text-orange-500">2</p>
+                    <h3 className="mt-4 font-bold">Fix</h3>
+                    <p className="mt-2 text-sm leading-6 text-neutral-600">I carry out the agreed work with practical, cost conscious solutions.</p>
+                  </div>
+                  <div className="rounded-sm bg-black p-6 text-white shadow-lg">
+                    <p className="text-4xl font-light text-orange-500">3</p>
+                    <h3 className="mt-4 font-bold">Support</h3>
+                    <p className="mt-2 text-sm leading-6 text-neutral-300">You get clear advice on what changed and how to avoid repeat issues.</p>
+                  </div>
+                </div>
+
+                <div className="mt-14">
+                  <h2 className="text-3xl font-bold">Questions about this service</h2>
+                  <div className="mt-6 space-y-4">
+                    {currentService.faqs.map(([question, answer]) => (
+                      <div key={question} className="rounded-sm border bg-white p-5 shadow-sm">
+                        <h3 className="font-bold">{question}</h3>
+                        <p className="mt-2 text-sm leading-7 text-neutral-600">{answer}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+              <aside className="h-fit rounded-sm bg-neutral-950 p-8 text-white shadow-xl lg:sticky lg:top-24">
+                <h3 className="text-2xl font-bold">Need this service?</h3>
+                <p className="mt-4 leading-7 text-neutral-300">Send a message with a quick description of the issue and I will get back to you as soon as possible.</p>
+                <a href="/#contact" className="mt-6 inline-block bg-orange-500 px-6 py-4 text-sm font-bold text-white hover:bg-orange-600">Get Support</a>
+                <img src={currentService.images.feature} alt="" className="h-40 w-full object-cover opacity-80" />
+                <div className="mt-8 border-t border-white/10 pt-6 text-sm text-neutral-300">
+                  <p className="flex gap-2"><Phone className="h-4 w-4 text-orange-500" /> 07944 521 440</p>
+                  <p className="mt-3 flex gap-2"><Mail className="h-4 w-4 text-orange-500" /> hello@example.co.uk</p>
+                </div>
+              </aside>
+            </div>
+          </section>
+        </main>
+      </div>
+    );
+  }
+
   return (
     <div className="min-h-screen bg-white font-sans text-neutral-900">
       <header className="sticky top-0 z-50 bg-black text-white shadow-xl">
@@ -77,7 +389,7 @@ export default function ITSupportWebsite() {
             ))}
           </nav>
           <div className="hidden items-center gap-4 text-sm lg:flex">
-            <span className="flex items-center gap-2"><Phone className="h-4 w-4 text-orange-500" /> 0800 123 4567</span>
+            <span className="flex items-center gap-2"><Phone className="h-4 w-4 text-orange-500" /> 07944 521 440</span>
             <a href="#contact" className="rounded-sm bg-white px-4 py-2 font-semibold text-black hover:bg-orange-500 hover:text-white">Get Support</a>
           </div>
           <button className="rounded-sm bg-orange-500 p-3 lg:hidden"><Menu className="h-5 w-5" /></button>
@@ -137,17 +449,20 @@ export default function ITSupportWebsite() {
                       <Icon className="mb-3 h-7 w-7 text-orange-500" />
                       <h3 className="font-bold">{service.title}</h3>
                       <p className="mt-3 min-h-20 text-sm leading-6 text-neutral-600">{service.text}</p>
-                      <a href="#contact" className="mt-5 inline-block bg-black px-5 py-3 text-xs font-bold text-white hover:bg-orange-500">Book Support</a>
+                      <a href={service.href} className="mt-5 inline-block bg-black px-5 py-3 text-xs font-bold text-white hover:bg-orange-500">Learn More</a>
                     </div>
                   </article>
                 );
               })}
               <div className="rounded-sm bg-white p-5 text-left shadow-xl shadow-neutral-200/80">
-                {quickLinks.map((item) => (
-                  <a key={item} href="#contact" className="flex items-center justify-between border-b py-4 text-sm font-medium last:border-b-0 hover:text-orange-500">
-                    {item}<ArrowRight className="h-4 w-4" />
-                  </a>
-                ))}
+                {quickLinks.map((item) => {
+                  const href = item === "Web Hosting" ? "/email-web-hosting" : item === "Email Setup" ? "/email-web-hosting" : item === "Broadband Help" ? "/wifi-broadband-support" : item === "Network Support" ? "/network-support" : "/business-it-support";
+                  return (
+                    <a key={item} href={href} className="flex items-center justify-between border-b py-4 text-sm font-medium last:border-b-0 hover:text-orange-500">
+                      {item}<ArrowRight className="h-4 w-4" />
+                    </a>
+                  );
+                })}
               </div>
             </div>
           </div>
@@ -260,7 +575,7 @@ export default function ITSupportWebsite() {
                 <Icon className="mb-4 h-8 w-8 text-orange-500" />
                 <h3 className="font-bold text-orange-500">{title}</h3>
                 <p className="mt-3 text-sm leading-6 text-neutral-600">{text}</p>
-                <a href="#contact" className="mt-5 inline-flex items-center gap-1 text-sm font-bold">Find out more <ArrowRight className="h-4 w-4 text-orange-500" /></a>
+                <a href={title === "Business IT Support" ? "/business-it-support" : title === "Network Solutions" ? "/network-support" : "/email-web-hosting"} className="mt-5 inline-flex items-center gap-1 text-sm font-bold">Find out more <ArrowRight className="h-4 w-4 text-orange-500" /></a>
               </div>
             ))}
           </div>
@@ -281,7 +596,7 @@ export default function ITSupportWebsite() {
           <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-[300px_1fr]">
             <div>
               <h2 className="text-3xl font-bold">Got questions? <span className="text-orange-500">Let us know</span></h2>
-              <p className="mt-4 text-neutral-600">Call <span className="font-bold text-orange-500">0800 123 4567</span> or send a message and we will get back to you.</p>
+              <p className="mt-4 text-neutral-600">Call <span className="font-bold text-orange-500">07944 521 440</span> or send a message and we will get back to you.</p>
             </div>
             <form
               action="https://api.web3forms.com/submit"
@@ -292,6 +607,11 @@ export default function ITSupportWebsite() {
                 type="hidden"
                 name="access_key"
                 value="f3a9804c-751e-4ffd-9930-6302bf1b73a9"
+              />
+              <input
+                type="hidden"
+                name="redirect"
+                value={`${window.location.origin}/thank-you`}
               />
               <input className="border p-4" type="text" name="name" placeholder="Name" required />
               <input className="border p-4" type="email" name="email" placeholder="Email" required />
@@ -328,7 +648,7 @@ export default function ITSupportWebsite() {
           <div>
             <h4 className="font-bold text-white">Contact Us</h4>
             <div className="mt-4 space-y-3 text-sm">
-              <p className="flex gap-2"><Phone className="h-4 w-4 text-orange-500" /> 0800 123 4567</p>
+              <p className="flex gap-2"><Phone className="h-4 w-4 text-orange-500" /> 07944 521 440</p>
               <p className="flex gap-2"><Mail className="h-4 w-4 text-orange-500" /> hello@example.co.uk</p>
               <p className="flex gap-2"><MapPin className="h-4 w-4 text-orange-500" /> Your town, UK</p>
             </div>
